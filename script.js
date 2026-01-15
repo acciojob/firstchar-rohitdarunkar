@@ -1,11 +1,15 @@
-function firstChar(text) {
-  for (let i = 0; i < text.length; i++) {
-    if (text[i] !== ' ') {
-      return text[i];
-    }
+let text = prompt("Enter name");
+
+if (text !== null) {
+  text = text.trim(); 
+
+  if (text.length > 0) {
+    alert(text[0]);
+  } else {
+    alert("");
   }
-  return '';
 }
+
 
 // Do not change the code below
 //Uncomment the following line to show the prompt popup

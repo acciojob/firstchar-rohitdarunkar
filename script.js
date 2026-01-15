@@ -1,14 +1,17 @@
-let text = prompt("Enter name");
+let text = prompt("Enter text");
 
 if (text !== null) {
-  text = text.trim(); 
+  text = text.trim();
+
+  let firstChar = "";      // ✅ declared
 
   if (text.length > 0) {
-    alert(text[0]);
-  } else {
-    alert("");
+    firstChar = text[0];
   }
+
+  alert(firstChar);
 }
+
 
 
 // Do not change the code below

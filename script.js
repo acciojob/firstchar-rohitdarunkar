@@ -3,7 +3,7 @@ let text = prompt("Enter text");
 if (text !== null) {
   text = text.trim();
 
-  let firstChar = "";      // ✅ declared
+  let firstChar = "";   // ✅ declared ONCE, always exists
 
   if (text.length > 0) {
     firstChar = text[0];
@@ -11,6 +11,8 @@ if (text !== null) {
 
   alert(firstChar);
 }
+
+
 
 
 
